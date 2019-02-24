@@ -7,6 +7,9 @@ header {
   height: 300px;
   width: 75%;
 }
+p {
+color: red;
+}
 
  h1 {
   font-style: italic;
@@ -14,11 +17,11 @@ header {
   background-color:hotpink;
 }
 img {
-  width: 700px;
-  height: 270px;
+  width: 1075px;
+  height: 275px;
+  display: block;
 }
-
-.underscore {
+ .underscore {
   font-size: 20px;
   text-align: center;
   margin: 50px auto;

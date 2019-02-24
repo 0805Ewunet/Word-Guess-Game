@@ -2,33 +2,63 @@
 <html lang="en-us">
 
     <head>
-        <meta charset="utf-8" />
-        <title>Word Guess Game</title>
+
+        <meta charset="UTF-8">
+        <title>word guess game</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <!-- Bootstrap CDN -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     </head>
 
     <body>
-        <h1>Hangman 80's Style</h1>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Word Guess Game-<strong>80's sound</strong>
+                </h1>
+                <p>Press any key to get started!</p>
+            </div>
 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Word to Guess(80's music)</h3>
+                </div>
+                <div class="panel-body">
+                    <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
+                </div>
+            </div>
 
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Wrong Guesses: <span id="wrongGuesses"></span>
+                </div>
+            </div>
 
-        <div class="container"></div>
-        <header>
-            <br>
-            <h1>Press any key to get started!</h1>
-            <h3>Current Word</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Guesses Left: <span id="numGuesses"></span>
+                </div>
+            </div>
 
-            <div class="underscore"> _ _ _ _ _ _ _ _ _ _ _ _ _</div>
+            <!--this will let the user know when win game-->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Win Counter: <span id="winCounter">0</span>
+                </div>
+            </div>
 
-            <div class="number of guess remaining">Number of Guess Remaining</div>
-            <br>
-            <div class="letters already guessed">Letters Already Guessed</div>
-            <br>
-            <img src="images/il_340x270.1300042403_ad1r.jpg" alt="Hangman">
-        </header>
+            <!--this will let the user know when lose game-->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    Loss Counter: <span id="lossCounter">0</span>
+                </div>
+            </div>
 
-        <script src="assets/javascript/game.js"></script>
+            <img src="images/80sImage.jpg" alt="80's style">
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
     </body>
 
 </html>
