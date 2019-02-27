@@ -1,11 +1,10 @@
 //GLOBAL VARIABLES
 //---------------------------------------
 // Used to record how many times a letter can be pressed
-var doubleWord = ['a', 'b', 'c', 'd', 'e', 'f','g', 'h', 'i','j', 'k', 'l','m', 'n', 'o','p', 'q', 'r','s', 't', 'u','v','w', 'x','y', 'z'];
+var doubleWord = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-// Creat an array of Words/-songs
-var wordBank = ['madonna', 'blondie', 'prince', 'thebangles', 'thepolice', 'wham', 'saltnpepa',
-	'axlrose', 'michaeljackson', 'bonjovi',]
+// Creat an array of Songs
+var wordBank = ['madonna', 'blondie', 'prince', 'thebangles', 'thepolice', 'wham', 'saltnpepa', 'axlrose', 'michaeljackson', 'bonjovi',]
 //Holds choosenWord
 var choosenWord = "";
 //Holds letters in word
@@ -39,15 +38,7 @@ function reset() {
 	guessesLeft = 9;
 	wrongLetters = [];
 	blanksAndSuccesses = [];
-	doubleWord = ['a', 'b', 'c',
-		'd', 'e', 'f',
-		'g', 'h', 'i',
-		'j', 'k', 'l',
-		'm', 'n', 'o',
-		'p', 'q', 'r',
-		's', 't', 'u',
-		'v', 'w', 'x',
-		'y', 'z'];
+	doubleWord = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 	test = false;
 	startGame();
 }
@@ -65,15 +56,7 @@ function startGame() {
 	guessesLeft = 9;
 	wrongLetters = [];
 	blanksAndSuccesses = [];
-	doubleWord = ['a', 'b', 'c',
-		'd', 'e', 'f',
-		'g', 'h', 'i',
-		'j', 'k', 'l',
-		'm', 'n', 'o',
-		'p', 'q', 'r',
-		's', 't', 'u',
-		'v', 'w', 'x',
-		'y', 'z'];
+	doubleWord = ['a', 'b', 'c', 'd', 'e', 'f',	'g', 'h', 'i',	'j', 'k', 'l',	'm', 'n', 'o',	'p', 'q', 'r',	's', 't', 'u','v', 'w', 'x','y', 'z'];
 
 	//Populate blanks
 	for (var i = 0; i < numBlanks; i++) {
