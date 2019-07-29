@@ -1,6 +1,6 @@
 # Word-Guess-Game
 Word Guess Game is a simple version of a hangman style game. The purpose of this assignment was to create a word guess game using JavaScript.
-Link to: https://0805ewunet.github.io/Basic-Portfolio/word-guess-game/index.html
+
 
 How to Play: 
 Press any Alpha key (A-Z, a-z) to start the game. Non-alpha keys are ignored.
